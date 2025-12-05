@@ -9,7 +9,8 @@ const app = express();
 // Allow your Vite dev server (change port if yours is different)
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "*",
+    
   })
 );
 app.use(express.json());
